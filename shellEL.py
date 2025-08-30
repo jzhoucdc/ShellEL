@@ -27,8 +27,3 @@ elif sys.argv[1] == "-L":
         print("缺少shellcode-hex")
         sys.exit(1)
     run_shellcode(unhex(sys.argv[2])).interactive()
-
-else:
-    print("未知参数")
-    usage()
-    sys.exit(1)
